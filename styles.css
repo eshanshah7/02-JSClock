@@ -1,0 +1,176 @@
+/* line 10, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+body {
+  background: #34587A; }
+
+/* line 14, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 80px auto; }
+
+/* line 21, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.clockbase {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #BD3733;
+  border-radius: 50%; }
+  /* line 25, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .clockbase:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: inherit;
+    left: 10%; }
+  /* line 32, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .clockbase:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+    background: #BD3733;
+    border-radius: inherit;
+    left: 20%; }
+
+/* line 41, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.star-holder {
+  position: absolute;
+  top: 30%;
+  width: 40%;
+  height: 40%;
+  left: 30%;
+  background: #34587A;
+  border-radius: 50%; }
+
+/* line 48, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.star {
+  position: absolute;
+  top: 80px;
+  width: 0;
+  height: 0;
+  left: 24px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid white;
+  border-left: 100px solid transparent;
+  transform: scale(1.16) rotate(35deg); }
+  /* line 55, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .star:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    width: 0;
+    height: 0;
+    left: -65px;
+    border-bottom: 80px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(-35deg); }
+  /* line 64, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .star:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    width: 0;
+    height: 0;
+    left: -105px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg); }
+
+/* line 75, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.clock-center {
+  position: absolute;
+  top: 285px;
+  width: 20px;
+  height: 20px;
+  background: #34587A;
+  border: 5px solid #BD3733;
+  left: 285px;
+  border-radius: 50%;
+  z-index: 2; }
+
+/* line 84, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.hand {
+  position: absolute;
+  background: black;
+  border-radius: 5%;
+  left: 287.5px;
+  z-index: 1;
+  transform-origin: 50% 100%; }
+
+/* line 95, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  bottom: 300px; }
+
+/* line 102, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.minute-hand {
+  height: 230px;
+  width: 25px; }
+
+/* line 107, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.hour-hand {
+  width: 30px;
+  height: 150px;
+  left: 285px; }
+
+/* line 113, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.second-hand {
+  width: 10px;
+  height: 250px;
+  left: 295px; }
+
+/* line 121, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.clock-face1 {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  left: 50%;
+  color: white; }
+  /* line 125, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .clock-face1:before {
+    position: absolute;
+    content: "12";
+    font-size: 3.2em;
+    left: -25px; }
+  /* line 131, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .clock-face1:after {
+    position: absolute;
+    content: "6";
+    font-size: 3.2em;
+    left: -12.5px;
+    top: 540px; }
+
+/* line 140, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+.clock-face2 {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  color: white; }
+  /* line 143, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .clock-face2:before {
+    position: absolute;
+    content: "9";
+    font-size: 3.2em;
+    left: 20px;
+    top: -25px; }
+  /* line 150, H:/JS30/JS30/02 - JS and CSS Clock/02-JSClock/styles.scss */
+  .clock-face2:after {
+    position: absolute;
+    content: "3";
+    font-size: 3.2em;
+    top: -25px;
+    left: 560px; }
+
+/*# sourceMappingURL=styles.css.map */
